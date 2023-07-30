@@ -20,8 +20,8 @@ export const sendMail = async (
   const mail = {
     from: "",
     to:
-      //  "info@horecasolution.nl",
-      "ddstavenuiter@gmail.com",
+       "info@horecasolution.nl",
+    //   "ddstavenuiter@gmail.com",
     subject: `${name} wilt graag kennis maken`,
     html: `
             <h1>${name} wilt graag kennis maken met Horeca Solution!</h1> 
