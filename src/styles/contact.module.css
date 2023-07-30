@@ -55,6 +55,8 @@
   background-color: var(--background);
   border: 1px solid var(--border);
   box-shadow: var(--input-shadow);
+  color: var(--text);
+  padding-left: 3px;
 }
 
 .labelInput input:focus-visible {
@@ -63,12 +65,19 @@
   color: var(--text);
 }
 
+.labelInput input:-webkit-autofill,
+.labelInput input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
 .labelInput textarea {
   background-color: var(--background);
   border: 1px solid var(--border);
   box-shadow: var(--input-shadow);
   height: 150px;
   resize: none;
+  color: var(--text);
+  font-family: var(--font-mono) ;
 }
 
 .labelInput textarea:focus-visible {
@@ -78,6 +87,60 @@
   font-family: var(--font-mono);
 }
 
+.errorOuter{
+  display: flex;
+  justify-content: center;
+}
+
+.error{
+  width: 100%;
+  background-color: rgb(253, 237, 237);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  margin: 15px 0;
+  color: rgb(95, 33, 32);
+}
+
+.error svg{
+  color: #d32f2f
+}
+
+.successOuter{
+  display: flex;
+  justify-content: center;
+}
+
+.success{
+  width: 100%;
+  background-color: rgb(238, 253, 237);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  margin: 15px 0;
+  color: rgb(36, 95, 32);
+}
+
+.success svg{
+  color: #46ae21
+}
+
+.spinnerOuter{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.buttonOuter{
+  display: flex;
+  align-items: center;
+  
+}
 @media only screen and (max-width: 875px) {
   .main {
     padding: 15px;
