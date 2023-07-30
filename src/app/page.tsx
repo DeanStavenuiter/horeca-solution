@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/styles/page.module.css";
 import { Metadata } from "next";
 import Header from "./components/Header";
-import cook from "../../public/cook.jpg";
+// import cook from "../../public/cook.jpg";
 export const metadata: Metadata = {
   title: "Horeca Solution - HOME",
   description: "Created by Dean Stavenuiter",
@@ -51,7 +51,7 @@ export default function Home() {
           <p>Horeca Solution.</p>
         </article>
         <div className={styles.imageMainOuter}>
-          <Image src={cook} alt="chef" className={styles.imageMain} />
+          <Image src={"https://horeca-solution.s3.eu-north-1.amazonaws.com/e2cd5063-598e-43fe-967d-48ab2452784a.JPG"} alt="chef" className={styles.imageMain} />
         </div>
       </main>
     </div>
