@@ -51,7 +51,11 @@ export default function Home() {
           <p>Horeca Solution.</p>
         </article>
         <div className={styles.imageMainOuter}>
-          <Image src="https://horeca-solution.s3.eu-north-1.amazonaws.com/e2cd5063-598e-43fe-967d-48ab2452784a.JPG" alt="chef" className={styles.imageMain} />
+          <Image
+            src="https://belas.s3.eu-north-1.amazonaws.com/Belas-img/e2cd5063-598e-43fe-967d-48ab2452784a.JPG"
+            alt="chef"
+            className={styles.imageMain}
+          />
         </div>
       </main>
     </div>
