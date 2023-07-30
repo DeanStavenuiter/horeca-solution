@@ -52,7 +52,7 @@ export default function Home() {
         </article>
         <div className={styles.imageMainOuter}>
           <Image
-            src="https://belas.s3.eu-north-1.amazonaws.com/Belas-img/e2cd5063-598e-43fe-967d-48ab2452784a.JPG"
+            src="https://horeca-solution.s3.eu-north-1.amazonaws.com/e2cd5063-598e-43fe-967d-48ab2452784a.JPG"
             alt="chef"
             className={styles.imageMain}
           />
