@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  padding: 0 35px;
+  color: var(--text-dark);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding: 0 35px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(138, 120, 102);
+}
+
+@media only screen and (max-width: 875px) {
+  .navbar {
+    margin: 0 15px 15px;
+    padding-bottom: 25px;
+    position: fixed;
+    top: 0;
+    background-color: var(--background-body);
+    width: 100%;
+  }
+
+  .navbar h1 {
+    padding: 0;
+    margin: 35px 0 0 0;
+  }
+
+  .menu {
+    display: none;
+  }
+}

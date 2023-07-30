@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: var(--text-dark);
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background);
+  padding: 35px;
+}
+
+.text {
+  width: 50%;
+  color: var(--text);
+  padding: 35px;
+}
+
+.text h2 {
+  font-weight: 400;
+}
+
+.form {
+  padding: 0 35px;
+  width: 50%;
+  border-left: 1px solid var(--border);
+}
+
+.lablesAndInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.labelInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.labelInput label {
+  margin: 3px 0;
+  color: var(--text);
+}
+
+.labelInput input {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  box-shadow: var(--input-shadow);
+}
+
+.labelInput input:focus-visible {
+  border: 1px solid var(--input-focus);
+  outline: none;
+  color: var(--text);
+}
+
+.labelInput textarea {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  box-shadow: var(--input-shadow);
+  height: 150px;
+  resize: none;
+}
+
+.labelInput textarea:focus-visible {
+  border: 1px solid var(--input-focus);
+  outline: none;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+@media only screen and (max-width: 875px) {
+  .main {
+    padding: 15px;
+  }
+
+  .title{
+    text-align: center;
+  }
+  .article {
+    flex-direction: column;
+  }
+  .text {
+    width: unset;
+    padding: 0 0 15px 
+  }
+  .form {
+    padding: 35px 0 0;
+    border-left: unset;
+    border-top: 1px solid var(--border);
+    width: unset;
+  }
+  .labelInput input {
+    min-width: 151px;
+  }
+}

@@ -1,0 +1,70 @@
+:root {
+  --text: rgb(238, 233, 227);
+  --text-dark: rgb(138, 120, 102);
+  --border: rgb(186, 164, 144);
+  --burger:rgb(95, 82, 70);
+  --input-focus: rgb(205, 180, 152);
+  --input-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  --background: rgb(156, 134, 114);
+  --background-body: rgb(244, 241, 237);
+  --background-mobile-menu: rgb(156, 134, 114);
+  --button: rgb(166, 144, 124);
+  --button-border: (136, 114, 94);
+  --button-hover: rgb(126, 104, 84);
+  --button-active: rgb(136, 114, 94);
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: unset;
+  background-color: var(--background-body);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 35px 125px;
+}
+
+button {
+  padding: 5px;
+  margin-top: 5px;
+  width: 50%;
+  color: var(--text);
+  background-color: var(--button);
+  border: 1px solid var(--button-border);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  background-color: var(--button-active);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 875px) {
+  main {
+    margin-top: 75px;
+    padding: 15px;
+  }
+}

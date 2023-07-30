@@ -1,0 +1,154 @@
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 37px;
+  right: 15px;
+  z-index: 1000; 
+}
+
+.menuToggle {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 55px;
+  right: -100px;
+  z-index: 1001; 
+}
+
+.mobileDropdown {
+  display: block;
+  background-color: var(--background);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  text-align: center;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: var(--burger);
+  stroke-width: 4;
+  stroke-linecap: round;
+  /* z-index: 99999; */
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+/* everything up is the burger itself */
+
+.burger{
+  position: relative;
+}
+
+.ul li {
+  list-style: none;
+}
+.ul li a{
+  color: var(--text);
+}
+.ul {
+  margin-top: 0;
+}
+
+.slideOut {
+  -webkit-animation: slide-out 0.6s linear forwards;
+  animation: slide-out 0.6s linear forwards;
+}
+
+.slideIn {
+  -webkit-animation: slide-left 0.6s linear forwards;
+  animation: slide-left 0.6s linear forwards;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .mobileMenu {
+    display: flex;
+  }
+
+  .mobileDropdown ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 0;
+  }
+
+  .mobileDropdown li {
+    padding: 15px 0;
+  }
+
+}
