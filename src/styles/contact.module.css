@@ -19,11 +19,12 @@
 .text {
   width: 50%;
   color: var(--text);
-  padding: 35px;
+  padding: 0 35px 35px;
 }
 
 .text h2 {
   font-weight: 400;
+  margin-top: 0;
 }
 
 .form {
@@ -139,7 +140,7 @@
 .buttonOuter{
   display: flex;
   align-items: center;
-  
+
 }
 @media only screen and (max-width: 875px) {
   .main {
