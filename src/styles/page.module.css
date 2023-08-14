@@ -1,34 +1,131 @@
 .main {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainInner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: var(--background); */
+  max-width: 75%;
+}
+
+.titleOuter {
+  position: absolute;
+}
+
+.title {
+  padding: 90px 90px;
+  color: rgb(241, 241, 241);
+  max-width: 95%;
+}
+
+.title h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+
+.HeaderImageOuter {
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 1900px;
+  background-color: rgb(63, 63, 63);
+}
+
+.HeaderImage {
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .homeArticle {
-  width: 50%;
+  width: 100%;
   background-color: var(--background);
   color: var(--text);
   padding: 35px;
 }
 
-.imageMainOuter {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  padding: 35px;
-  width: 50%;
-  background-color: var(--background);
-}
-.imageMain {
-  width: 100%;
-  height: auto;
+.homeArticle p{
+  font-size: 20px;
+  font-weight: 100;
 }
 
-@media only screen and (max-width: 875px) {
+.homeArticle h1 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.imageMainOuter {
+  display: flex;
+}
+
+.imageMain {
+ width: 100%;
+ height: auto;
+ object-fit: fill;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background);
+  width: 100%;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 250px;
+}
+
+.textLeft,
+.textRight {
+  padding: 15px 35px;
+  color: var(--text);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textLeft h3,
+.textRight h3 {
+  margin-bottom: 0;
+}
+
+.textLeft p,
+.textRight p {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+.right {
+  border-left: 1px solid var(--border);
+}
+
+.video{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.buttonOverOns{
+  width: 25%;
+}
+
+/* @media only screen and (max-width: 875px) {
   .main {
     flex-direction: column;
   }
-}
+} */
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .main {
     flex-direction: column;
   }
@@ -43,4 +140,4 @@
   .homeArticle {
     padding-bottom: 0;
   }
-}
+} */

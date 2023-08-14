@@ -1,25 +1,91 @@
-.navbar {
+.header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 99vw;
+  margin-bottom: 35px;
+}
+
+.spoed {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials a{
+  color: var(--text-dark);
+}
+
+.menu a {
+  background-image: linear-gradient(to right, var(--text-dark), var(--text-dark) 50%, #DECBB9 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu a::before {
+  content: "";
+  background: var(--text-dark);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .active{
+  border-bottom: 1px solid var(--text-dark);
+}
+
+.menu a:hover {
+  background-position: 0;
+}
+
+.menu a:hover::before {
+  width: 100%;
+}
+
+.socials:hover {
+  cursor: pointer;
+}
+
+.spoed span {
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.navbar {
+  width: 75%;
+}
+
+.navbarInner {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar h1 {
-  padding: 0 35px;
-  color: var(--text-dark);
+.logo {
+  width: 125px;
+  height: auto;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  padding: 0 35px;
+.navbar h1 {
+  color: var(--text-dark);
 }
 
 .menu ul {
   display: flex;
   gap: 25px;
   list-style: none;
+  padding-left: 0;
 }
 
 .menu li a {
