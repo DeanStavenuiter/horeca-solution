@@ -7,31 +7,28 @@ import Image from "next/image";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { useRouter } from "next/router";
 
 const Header = () => {
-
   return (
     <header className={styles.header}>
       <div className={styles.navbar}>
         <div className={styles.spoed}>
-          <span>Bij spoed: +31 6 11 86 85 67</span>
+          <Link href={"callto:+31611868567"}>Bij spoed: +31 6 11 86 85 67</Link>
         </div>
         <div className={styles.socials}>
-          <Link href={''} target="blank">
+          <Link href={""} target="blank">
             <FacebookIcon />
           </Link>
-          <Link href={''} target="blank">
+          <Link href={""} target="blank">
             <InstagramIcon />
           </Link>
-          <Link href={''} target="blank">
+          <Link href={""} target="blank">
             <LinkedInIcon />
           </Link>
         </div>
         <div className={styles.navbarInner}>
           <div className={styles.logoOuter}>
-            <Link 
-            href={"/"}>
+            <Link href={"/"}>
               <Image
                 className={styles.logo}
                 height={250}

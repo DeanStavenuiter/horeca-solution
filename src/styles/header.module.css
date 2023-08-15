@@ -11,6 +11,12 @@
   margin: 10px 0;
 }
 
+.spoed a{
+  cursor: pointer;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
 .socials {
   display: flex;
   justify-content: flex-end;
@@ -25,11 +31,12 @@
   background-size: 200% 100%;
   background-position: -100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 
-.menu a::before {
+/* .menu a:before {
   content: "";
   background: var(--text-dark);
   display: block;
@@ -39,19 +46,15 @@
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
-}
-
-.menu .active{
-  border-bottom: 1px solid var(--text-dark);
-}
+} */
 
 .menu a:hover {
   background-position: 0;
 }
 
-.menu a:hover::before {
+/* .menu a:hover::before {
   width: 100%;
-}
+} */
 
 .socials:hover {
   cursor: pointer;

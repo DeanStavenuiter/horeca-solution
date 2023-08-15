@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 99vw;
+  margin: 35px 0;
+}
+
+.footerInner{
+    display: flex;
+    gap: 15%;
+    width: 75%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav ul {
+  padding: 0;
+}
+
+.nav a {
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.socials a {
+  display: flex;
+  align-items: flex-end;
+  color: var(--text-dark);
+}
+
+.nav a,
+.socials a,
+.spoed a {
+  background-image: linear-gradient(
+    to right,
+    var(--text-dark),
+    var(--text-dark) 50%,
+    #decbb9 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover,
+.socials a:hover,
+.spoed a:hover {
+  background-position: 0;
+}
