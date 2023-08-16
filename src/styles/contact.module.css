@@ -1,5 +1,12 @@
 .main {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainInner{
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -14,6 +21,11 @@
   flex-direction: row;
   background-color: var(--background);
   padding: 35px;
+  width: 75%;
+}
+
+.article a{
+  color: var(--text);
 }
 
 .text {
@@ -145,24 +157,31 @@
 @media only screen and (max-width: 875px) {
   .main {
     padding: 15px;
+    margin-top: 115px;
   }
 
   .title{
     text-align: center;
+    width: 75%;
   }
+
   .article {
     flex-direction: column;
+    width: 100%;
   }
+
   .text {
     width: unset;
     padding: 0 0 15px 
   }
+
   .form {
     padding: 35px 0 0;
     border-left: unset;
     border-top: 1px solid var(--border);
     width: unset;
   }
+
   .labelInput input {
     min-width: 151px;
   }

@@ -14,14 +14,11 @@
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-}
-
-.nav ul {
-  padding: 0;
+  gap: 5px;
 }
 
 .nav a {
+    text-transform: uppercase;
 }
 
 .socials {
@@ -51,6 +48,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 
 .nav a:hover,

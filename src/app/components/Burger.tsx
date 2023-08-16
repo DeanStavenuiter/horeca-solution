@@ -31,7 +31,7 @@ const Burger = () => {
           ${active ? styles.active : ""}
           `}
           viewBox="0 0 100 100"
-          width="40"
+          width="60"
         >
           <path
             className={`${styles.line}  ${styles.top}`}

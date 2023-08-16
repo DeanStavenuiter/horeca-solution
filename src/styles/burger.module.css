@@ -1,9 +1,9 @@
 .mobileMenu {
   display: none;
   position: fixed;
-  top: 37px;
-  right: 15px;
-  z-index: 1000; 
+  top: 45px;
+  right: 35px;
+  z-index: 1001; 
 }
 
 .menuToggle {
@@ -49,7 +49,7 @@
   stroke: var(--burger);
   stroke-width: 4;
   stroke-linecap: round;
-  /* z-index: 99999; */
+  z-index: 99999;
 }
 
 .ham4 .top {

@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: center;
-  width: 99vw;
   margin-bottom: 35px;
+  z-index: -1;
 }
 
 .spoed {
@@ -26,6 +26,10 @@
   color: var(--text-dark);
 }
 
+.menu{
+  /* width: 100%; */
+}
+
 .menu a {
   background-image: linear-gradient(to right, var(--text-dark), var(--text-dark) 50%, #DECBB9 50%);
   background-size: 200% 100%;
@@ -34,27 +38,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
-
-/* .menu a:before {
-  content: "";
-  background: var(--text-dark);
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-} */
 
 .menu a:hover {
   background-position: 0;
 }
-
-/* .menu a:hover::before {
-  width: 100%;
-} */
 
 .socials:hover {
   cursor: pointer;
@@ -78,6 +67,8 @@
 .logo {
   width: 125px;
   height: auto;
+  position: relative;
+  /* z-index: -1; */
 }
 
 .navbar h1 {
@@ -103,7 +94,20 @@
     position: fixed;
     top: 0;
     background-color: var(--background-body);
-    width: 100%;
+    width: 75%;
+  }
+
+  .socials{
+    display: none;
+  }
+
+  .spoed{
+    justify-content: center;
+  }
+
+  .logo {
+    width: 75px;
+    height: auto;
   }
 
   .navbar h1 {
@@ -113,5 +117,10 @@
 
   .menu {
     display: none;
+  }
+
+  .burger{
+    position: relative;
+    z-index: 999;
   }
 }

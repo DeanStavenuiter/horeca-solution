@@ -1,10 +1,11 @@
-
 import Image from "next/image";
 import styles from "@/styles/page.module.css";
 import { Metadata } from "next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import cook from "../../public/cook.jpg";
+import Head from "next/head";
+
+
 export const metadata: Metadata = {
   title: "Horeca Solution - HOME",
   description: "Created by Dean Stavenuiter",

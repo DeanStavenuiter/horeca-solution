@@ -6,6 +6,7 @@ import styles from "@/styles/contact.module.css";
 import axios from "axios";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { CircularProgress } from "@mui/material";
+import Link from "next/link";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -79,6 +80,7 @@ const Contact = () => {
     <div>
       <Header />
       <main className={styles.main}>
+        <div className={styles.mainInner}>
         <div className={styles.title}>
           <h1>Laten we persoonlijk kennismaken</h1>
         </div>
@@ -88,8 +90,8 @@ const Contact = () => {
             <h2>Meer informatie of een kok aanvragen?</h2>
             <h2>We zijn je graag van dienst!</h2>
 
-            <p>Tel: 06 11 86 85 67</p>
-            <p>Mail: info@horecasolution.nl</p>
+            <Link href={"callto:+31611868567"}>Tel: +31 6 11 86 85 67</Link> <br />
+            <Link href={"mailto:info@horecasolution.nl"}>Mail: info@horecasolution.nl</Link>
           </div>
 
           <form className={styles.form}>
@@ -198,6 +200,7 @@ const Contact = () => {
             </div>
           </form>
         </article>
+        </div>
       </main>
     </div>
   );
