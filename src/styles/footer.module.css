@@ -5,10 +5,10 @@
   margin: 35px 0;
 }
 
-.footerInner{
-    display: flex;
-    gap: 15%;
-    width: 75%;
+.footerInner {
+  display: flex;
+  gap: 15%;
+  width: 75%;
 }
 
 .nav {
@@ -18,7 +18,7 @@
 }
 
 .nav a {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .socials {
@@ -55,4 +55,24 @@
 .socials a:hover,
 .spoed a:hover {
   background-position: 0;
+}
+
+@media only screen and (max-width: 875px) {
+  .footerInner {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav a,
+  .socials a,
+  .spoed a {
+    background-image: unset;
+    background-size: unset;
+    background-position: unset;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    transition: unset;
+    color: var(--text-dark);
+  }
 }

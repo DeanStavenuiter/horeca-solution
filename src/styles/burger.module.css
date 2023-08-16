@@ -78,7 +78,21 @@
   color: var(--text);
 }
 .ul {
-  margin-top: 0;
+  margin-top: 50px;
+}
+
+.logoOuter{
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  width: 75px;
+  height: auto;
+}
+
+.socials svg{
+  color: var(--text);
 }
 
 .slideOut {

@@ -1,6 +1,10 @@
 import styles from "@/styles/burger.module.css";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Burger = () => {
   const [active, setActive] = useState<Boolean | null>(null);
@@ -59,9 +63,23 @@ const Burger = () => {
                 <Link href={"/"}>home</Link>
               </li>
               <li>
+                <Link href={"/over-ons"}>over ons</Link>
+              </li>
+              <li>
                 <Link href={"/contact"}>contact</Link>
               </li>
             </ul>
+            <div className={styles.socials}>
+            <Link href={""} target="blank">
+              <FacebookIcon />
+            </Link>
+            <Link href={""} target="blank">
+              <InstagramIcon />
+            </Link>
+            <Link href={""} target="blank">
+              <LinkedInIcon />
+            </Link>
+          </div>
           </div>
         </div>
       )}

@@ -3,12 +3,12 @@ import styles from "@/styles/page.module.css";
 import { Metadata } from "next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Head from "next/head";
-
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Horeca Solution - HOME",
-  description: "Created by Dean Stavenuiter",
+  title: "Home | Horeca Solution",
+  description:
+    "Horeca Solution: Jouw schakel naar perfecte samenwerkingen. Wij bemiddelen tussen horecazaken, catering en evenementen, en getalenteerd personeel. Ervaar vakkundigheid, passie en flexibiliteit in elke culinaire creatie. Jouw betrouwbare partner voor naadloze verbindingen.",
 };
 
 export default function Home() {
@@ -40,14 +40,20 @@ export default function Home() {
               <div className={styles.textLeft}>
                 <h3>Via ons aan het werk?</h3>
                 <p>Schrijf je direct in!</p>
-                <button className={styles.ctaButton}>Inschrijven!</button>
+                <Link href={"/contact"}>
+                  <button className={styles.ctaButton}>Inschrijven!</button>
+                </Link>
               </div>
             </div>
             <div className={styles.right}>
               <div className={styles.textRight}>
                 <h3>Vraag horeca personeel aan!</h3>
                 <p>Extra handen nodig in uw bedrijf?</p>
-                <button className={styles.ctaButton}>Ik wil personeel!</button>
+                <Link href={"/contact"}>
+                  <button className={styles.ctaButton}>
+                    Ik wil personeel!
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -75,7 +81,9 @@ export default function Home() {
               juiste professionals samenkomen om meesterwerken te creëren.
             </p>
             <div>
-              <button className={styles.buttonOverOns}>over ons</button>
+              <Link href={"/over-ons"}>
+                <button className={styles.buttonOverOns}>over ons</button>
+              </Link>
             </div>
           </article>
         </div>

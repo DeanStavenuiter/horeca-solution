@@ -90,11 +90,12 @@
 @media only screen and (max-width: 875px) {
   .navbar {
     margin: 0 15px 15px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     position: fixed;
     top: 0;
     background-color: var(--background-body);
-    width: 75%;
+    width: 100%;
+    z-index: 1;
   }
 
   .socials{
@@ -108,6 +109,7 @@
   .logo {
     width: 75px;
     height: auto;
+    margin-left: 35px
   }
 
   .navbar h1 {
