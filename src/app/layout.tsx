@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Horeca Solution",
-  description: "Created by Dean Stavenuiter",
+  description: "Horeca Solution: Jouw schakel naar perfecte samenwerkingen. Wij bemiddelen tussen horecazaken, catering en evenementen, en getalenteerd personeel. Ervaar vakkundigheid, passie en flexibiliteit in elke culinaire creatie. Jouw betrouwbare partner voor naadloze verbindingen.",
   icons: {
     icon: "https://example.com/favicon.ico",
     apple: "https://example.com/apple-icon.png",

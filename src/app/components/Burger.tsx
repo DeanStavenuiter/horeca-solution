@@ -68,15 +68,18 @@ const Burger = () => {
               <li>
                 <Link href={"/contact"}>contact</Link>
               </li>
+              <li>
+                <Link href={"/inloggen"}>inloggen</Link>
+              </li>
             </ul>
             <div className={styles.socials}>
-            <Link href={""} target="blank">
+            <Link href={"https://www.facebook.com/profile.php?id=61550117108459"} target="blank">
               <FacebookIcon />
             </Link>
             <Link href={""} target="blank">
               <InstagramIcon />
             </Link>
-            <Link href={""} target="blank">
+            <Link href={"https://www.linkedin.com/in/horeca-solution-916782287/"} target="blank">
               <LinkedInIcon />
             </Link>
           </div>
