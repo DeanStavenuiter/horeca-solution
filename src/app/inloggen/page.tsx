@@ -53,12 +53,33 @@ const page = () => {
               </p>
             </div>
             <div className={styles.right}>
-                <h3>Log hieronder in via de button van Shiftmanager</h3>
-                <div className={styles.buttonShiftManagerOuter}>
-              <Link target="blank" href={"https://horecasolution.shiftmanager.pro/login"}>
-                <button className={styles.buttonShiftManager}>Shiftmanager</button>
-              </Link>
-            </div>
+                <div>
+                    <h3>Log hieronder in via de button van Shiftmanager</h3>
+                    <div className={styles.buttonShiftManagerOuter}>
+                    <Link
+                        target="blank"
+                        href={"https://horecasolution.shiftmanager.pro/login"}
+                    >
+                        <button className={styles.buttonShiftManager}>
+                        Inloggen Shiftmanager
+                        </button>
+                    </Link>
+                    </div>
+                </div>
+                <div>
+                    <h3>Heb je nog geen account bij Shiftmanager?</h3>
+                    <h3>Maak dan hier een account aan!</h3>
+                    <div className={styles.buttonShiftManagerOuter}>
+                        <Link
+                        target="blank"
+                        href={"https://horecasolution.shiftmanager.pro/inschrijven/"}
+                        >
+                        <button className={styles.buttonShiftManager}>
+                            Registreren Shiftmanager
+                        </button>
+                        </Link>
+                  </div>
+              </div>
             </div>
           </article>
         </div>
