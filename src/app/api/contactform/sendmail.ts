@@ -1,4 +1,3 @@
-import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export const sendMail = async (
@@ -8,20 +7,18 @@ export const sendMail = async (
   message: string
 ) => {
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true, // true for 465, false for other ports
+    host: "smtp-relay.brevo.com",
+    port: 587,
     auth: {
       user: `${process.env.NEXT_PUBLIC_NODEMAILER_EMAIL}`,
-      pass: `${process.env.NEXT_PUBLIC_NODEMAILER_APP_PWD}`, // link: https://support.google.com/accounts/answer/185833?hl=en
+      pass: `${process.env.NEXT_PUBLIC_NODEMAILER_APP_PWD}`,
     },
   });
 
   const mail = {
-    from: "",
-    to:
-       "info@horecasolution.nl",
-    //   "ddstavenuiter@gmail.com",
+    from: "noreply@horecasolution.nl",
+    to: "ddstavenuiter@gmail.com",
+    //  "info@horecasolution.nl",
     subject: `${name} wilt graag kennis maken`,
     html: `
             <h1>${name} wilt graag kennis maken met Horeca Solution!</h1> 
@@ -31,18 +28,17 @@ export const sendMail = async (
             telefoon: ${phone} <br>
             email: ${email} <br>
             bericht: ${message} <br>
-              `,
+            </p>
+            `,
   };
 
   try {
     await transporter.sendMail(mail);
-    console.log("Mail gestuurd!");
+    console.log("mail verzonden");
+    return "success";
   } catch (error) {
     console.log("Error met mail sturen: ", error);
-    return NextResponse.json({
-      message:
-        "Er is iets fout gegaan met het versturen van de mail, probeer het nog eens.",
-    });
+    throw new Error("Error sending email");
   }
 };
 

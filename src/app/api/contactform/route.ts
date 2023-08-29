@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendMail } from "./nodemailer";
+import { sendMail } from "./sendmail";
 
 export const POST = async (request: NextRequest, response: NextResponse) => {
   try {
@@ -17,13 +17,27 @@ export const POST = async (request: NextRequest, response: NextResponse) => {
         success: false,
       });
     }
-    console.log("Body", name, email, phone, message);
-    await sendMail(name, email, phone, message);
+    try {
+      const response = await sendMail(
+        name,
+        email,
+        phone,
+        message
+      );
 
-    return NextResponse.json({
-      message: "Mail is verzonden.",
-      success: true,
-    });
+      if (response === "success") {
+        return NextResponse.json({
+          message: "Mail is verzonden.",
+          success: true,
+        });
+      } else {
+        throw new Error("Error met mail versturen, probeer het nogmaals.");
+      }
+    } catch (error) {
+      return NextResponse.json({
+        message: "Er is iets fout gegaan probeer het nog eens.",
+      });
+    }
   } catch (error) {
     console.log("Error ", error);
     return NextResponse.json({

@@ -23,7 +23,7 @@ const year = new Date().getFullYear()
           <Link href={"https://www.facebook.com/profile.php?id=61550117108459"} target="blank">
             <FacebookIcon /> facebook
           </Link>
-          <Link href={""} target="blank">
+          <Link href={"https://www.instagram.com/horecasolution23/"} target="blank">
             <InstagramIcon /> instagram
           </Link>
           <Link href={"https://www.linkedin.com/in/horeca-solution-916782287/"} target="blank">

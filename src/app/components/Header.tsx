@@ -23,7 +23,7 @@ const Header = () => {
             <Link href={"https://www.facebook.com/profile.php?id=61550117108459"} target="blank">
               <FacebookIcon />
             </Link>
-            <Link href={""} target="blank">
+            <Link href={"https://www.instagram.com/horecasolution23/"} target="blank">
               <InstagramIcon />
             </Link>
             <Link href={"https://www.linkedin.com/in/horeca-solution-916782287/"} target="blank">
@@ -39,7 +39,7 @@ const Header = () => {
                   width={250}
                   alt="logo Horeca Solution"
                   src={
-                    "https://horeca-solution.s3.eu-north-1.amazonaws.com/logo/Horeca_solution_munt_logo.png"
+                    "https://horeca-solution.s3.eu-north-1.amazonaws.com/logo/Horeca_solution_munt_logo_1080x1080.png"
                   }
                 ></Image>
               </Link>
