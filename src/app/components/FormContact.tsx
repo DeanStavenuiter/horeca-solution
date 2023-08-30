@@ -63,7 +63,7 @@ const FormContact = () => {
 
     try {
       setIsLoading(true);
-      const response = await axios.post("/api/contactForm", {
+      const response = await axios.post("/api/contact", {
         body,
       });
       if (response.status === 200) {
@@ -73,7 +73,7 @@ const FormContact = () => {
         setErrorMessage(response.data.message);
         setIsLoading(false);
       }
-      console.log("response", response.data.message);
+      // console.log("response", response.data.message);
     } catch (error) {
       console.error("Error sending the form:", error);
     }
