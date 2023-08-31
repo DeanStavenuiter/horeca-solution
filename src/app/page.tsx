@@ -40,7 +40,7 @@ export default function Home() {
               <div className={styles.textLeft}>
                 <h3>Via ons aan het werk?</h3>
                 <p>Schrijf je direct in!</p>
-                <Link href={"/contact"}>
+                <Link href={"https://horecasolution.shiftmanager.pro/inschrijven"}>
                   <button className={styles.ctaButton}>Inschrijven!</button>
                 </Link>
               </div>
